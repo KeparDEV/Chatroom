@@ -4,11 +4,11 @@ NOT DONE!!
 ## Download
 ``` git clone https://KeparDEV/Chatroom.git ```
 **OR**
-Download it [here](https://github.com/KeparDEV/Chatroom/archive/refs/heads/main.zip)
+Download it [here](https://github.com/KeparDEV/Chatroom/archive/refs/heads/main.zip){:target="_blank" rel="noopener"}
 
 ## How to Use??
 Edit "Client.py" + "server.py"
-To change the HOST ( replace "127.0.0.1" by [your public ip](http://ip4.me) )
+To change the HOST ( replace "127.0.0.1" by [your public ip](http://ip4.me){:target="_blank" rel="noopener"} )
 
 Now start the server by doing:
 ```
@@ -27,5 +27,5 @@ python client.py
 **The Chat absolutly need the a link to a server!**
 
 ## CREDIT:
-made by: [Kepar#4932](https://github.com/KeparDEV/)
-& [Carl.#9790](https://github.com/carlFandino)
+made by: [Kepar#4932](https://github.com/KeparDEV/){:target="_blank" rel="noopener"}
+& [Carl.#9790](https://github.com/carlFandino){:target="_blank" rel="noopener"}
