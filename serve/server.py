@@ -12,16 +12,12 @@ server.listen()
 clients = []
 nicknamesList = []
 
-discord = 'No discord linked'
 
 def broadcast(message):
     for client in clients:
         client.send(message.encode('utf-8'))
         
         
-if message == '/discord' :
-    for client in clients:
-        client.send(discord.encode('utf-8'))
 
 def handle(client):
     
