@@ -26,6 +26,6 @@ python client.py
 
 **The Chat absolutly need the a link to a server!**
 
-### CREDIT
+## CREDIT:
 made by: [Kepar#4932](https://github.com/KeparDEV/)
 & [Carl.#9790](https://github.com/carlFandino)
