@@ -20,7 +20,8 @@ def broadcast(message):
         
         
 if message == '/discord' :
-    client.send(discord.encode('utf-8))
+    for client in clients:
+        client.send(discord.encode('utf-8))
 
 def handle(client):
     
