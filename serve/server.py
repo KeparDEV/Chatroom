@@ -13,42 +13,43 @@ clients = []
 nicknamesList = []
 
 def broadcast(message):
-	for client in clients:
-		client.send (message)
+    for client in clients:
+        client.send(message)
 
 def handle(client):
-	while True:
-		try:
-			message - client.recv(1024)
-			print(f"{nicknames[clients.index(client)]}: {message}")
-			broadcast(message)
-		except:
-			index = client.index(client)
-			clients.remove(client)
-			client.close()
-			nickname = nicknames[index]
-			nicknames.remove(nickname)
-			break
+    
+    while True:
+        try:
+            message = client.recv(1024)
+            print(f"{nicknamesList[clients.index(client)]}: {message}")
+            broadcast(message)
+        except:
+            index = clients.index(client)
+            clients.remove(client)
+            client.close()
+            nickname = nicknamesList[index]
+            nicknamesList.remove(nickname)
+            break
 
 #recieve
 def receive():
-	while True:
-		client, adress = server.accept()
-		print(f"Connected with {str(adress)}!")
+    while True:
+        client, adress = server.accept()
+        print(f"Connected with {str(adress)}!")
 
-		client.send("NICK".encode('utf-8'))
-		nicknames = client.recv(1024)
+        client.send("NICK".encode('utf-8'))
+        nicknames = client.recv(1024)
 
-		nicknamesList.append(nicknames)
-		clients.append(client)
+        nicknamesList.append(nicknames)
+        clients.append(client)
 
-		print(f"Nickname of the client is {nicknames}")
-		broadcast(f"{nicknames} connected to the server!\n".encode('utf-8'))
-		client.send("Connected to the server".encode('utf-8'))
+        print(f"Nickname of the client is {nicknames}")
+        broadcast(f"{nicknames} connected to the server!\n".encode('utf-8'))
+        client.send("Connected to the server".encode('utf-8'))
+        
 
-		thead =  threading.Thread(args(client,), target=handle)
-		thread.start()
-
+        thread =  threading.Thread(target=handle,args=[client])
+        thread.start()
 
 print("Server UP!")
 receive()
