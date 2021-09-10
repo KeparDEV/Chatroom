@@ -18,8 +18,12 @@ py server.py
 (same for Linux)
 
 
-After, You can send the Client.py TO your friends ++ , they just need to start it, and chat with you and your group
-``` python client.py ```
+After, You can send the Client.py to your friends ++ , 
+they just need to start it, and chat with you and your group
+``` 
+python client.py
+
+```
 
 **The Chat absolutly need the a link to a server!**
 
