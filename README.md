@@ -2,9 +2,11 @@
 NOT DONE!!
 
 ## Download
-``` git clone https://KeparDEV/Chatroom.git ```
+```
+git clone https://KeparDEV/Chatroom.git 
+```
 **OR**
-Download it <a href="https://github.com/KeparDEV/Chatroom/archive/refs/heads/main.zip" target="_blank">here</a>
+Download it [here](https://github.com/KeparDEV/Chatroom/archive/refs/heads/main.zip)
 
 ## How to Use??
 Edit "Client.py" + "server.py"
