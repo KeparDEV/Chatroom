@@ -5,7 +5,7 @@ NOT DONE!!
 ```
 git clone https://KeparDEV/Chatroom.git 
 ```
-**OR** \n
+**OR** <br>
 Download it [here](https://github.com/KeparDEV/Chatroom/archive/refs/heads/main.zip)
 
 ## How to Use??
