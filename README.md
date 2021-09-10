@@ -8,7 +8,7 @@ Download it [here](https://github.com/KeparDEV/Chatroom/archive/refs/heads/main.
 
 ## How to Use??
 Edit "Client.py" + "server.py"
-To change the HOST ( replace "127.0.0.1" by your public ip )
+To change the HOST ( replace "127.0.0.1" by [your public ip](http://ip4.me) )
 
 Now start the server by doing:
 ```
