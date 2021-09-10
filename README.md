@@ -4,7 +4,7 @@ NOT DONE!!
 ## Download
 ``` git clone https://KeparDEV/Chatroom.git ```
 **OR**
-Download it [here](https://github.com/KeparDEV/Chatroom/archive/refs/heads/main.zip)
+Download it <a href="https://github.com/KeparDEV/Chatroom/archive/refs/heads/main.zip" target="_blank">here</a>
 
 ## How to Use??
 Edit "Client.py" + "server.py"
