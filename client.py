@@ -21,12 +21,17 @@ class Client:
 
 		self.gui_done = False
 		self.running = True
+        
 
 		gui_thread = threading.Thread(target=self.gui_loop)
 		receive_thread = threading.Thread(target=self.receive)
+		
+		threads = [gui_thread,receive_thread]
+		for i in threads:
+			i.start()
 
-		gui_thread.start()
-		receive_thread.start()
+		#gui_thread.start()
+		#receive_thread.start()
 
 	def gui_loop(self):
 		self.win = tkinter.Tk()
@@ -83,7 +88,7 @@ class Client:
 						self.text_area.yview('end')
 						self.text_area.config(state='disabled')
 
-			except ConnectionAbordedError:
+			except ConnectionAbortedError:
 				break
 
 			except:
