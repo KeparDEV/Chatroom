@@ -26,6 +26,7 @@ they just need to start it, and chat with you and your group
 python client.py
 ```
 
+<br>
 **The Chat absolutly need the a link to a server!** <br>
 yes, the client work if it compiled with pyinstall ( till the HOST are configured correctly )
 
